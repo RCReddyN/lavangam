@@ -26,7 +26,7 @@ class Trie:
         for i in range(len(word)):
             ch = word[i]
             if ch not in curr.children:
-                self.suggestions(self.root, word[0:i])
+                self.suggestions(self.root, word[0:i-1])
                 return False
             curr = curr.children[ch]
         if curr.isWord:

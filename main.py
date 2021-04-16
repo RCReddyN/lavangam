@@ -11,12 +11,10 @@ window.iconphoto(False, icon_pi)
 key = tk.StringVar(window)
 def read_input():
     sug = ''
-    sgstn_label = tk.Label(window, text=sug, borderwidth=2, width =50, relief='sunken')
-    sgstn_label.place(x=25,y=100)
     print(key.get())
     if(trie.search(key.get())):
-        sug=''
-        sgstn_label = tk.Label(window, text=sug, borderwidth=2, width =50, relief='sunken')
+        sug='The word seems to be of correct spelling.'
+        sgstn_label = tk.Label(window, text=sug, borderwidth=2, width =50, relief='flat')
         sgstn_label.place(x=25,y=100)
     else:
         qstn_label = tk.Label(window, text='Did you mean?')
