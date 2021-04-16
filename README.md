@@ -8,7 +8,6 @@
 <ul>
 <li><p>To use the application run the script named main.py</p>
 </ul>
-<br>
 <h2>Screenshot(s):</h2>
 <ul>
 <li><p>The following is the screenshot of the application when run.</p>
