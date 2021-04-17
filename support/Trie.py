@@ -1,4 +1,3 @@
-import random
 class TrieNode:
     def __init__(self):
         self.children = dict()
@@ -7,10 +6,19 @@ class TrieNode:
 class Trie:
     def __init__(self):
         self.root = TrieNode()
+        self.key = ''
         self.suggestion_list = []
-        with open("support//wordcache.txt") as f:
-            for line in f.readlines():
-                self.insert(line.strip())
+        try:
+            from nltk.corpus import words
+            word_list = words.words()
+        except:
+            import nltk
+            nltk.download('words')
+            from nltk.corpus import words
+            word_list = words.words()
+        finally:
+            for word in word_list:
+                self.insert(word)
 
     def insert(self, word):
         curr = self.root
@@ -22,6 +30,7 @@ class Trie:
         curr.isWord = True
 
     def search(self, word):
+        self.key = word
         curr = self.root
         for i in range(len(word)):
             ch = word[i]
@@ -35,7 +44,7 @@ class Trie:
         return False
     
     def suggestions(self, node, word):
-        if node.isWord:
+        if node.isWord and len(self.suggestion_list) < 8: 
             self.suggestion_list.append(word)
         for ch in node.children:
             word += ch
