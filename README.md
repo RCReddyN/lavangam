@@ -1,5 +1,4 @@
 <h1>This is Lavangam!</h1> 
-<img src="support/running.gif">
 <ul>
 <li><b>Lavangam</b> is a commandline spellchecker written in Python.
 <li>Do not judge me for the kind of names I use. It is funny. Atleast, to me.
@@ -11,3 +10,8 @@
 <li>To use the spell-checker, run the script named lavangam.py.
 <li>Type in that word you want to type to check if it works as you thought it would.
 </ul>
+<br>
+<h1></h1>
+<div align="center">
+<img src="https://github.com/RCReddyN/lavangam/blob/master/img/running.gif?raw=true">
+</div>
