@@ -1,4 +1,5 @@
 <h1>This is Lavangam!</h1> 
+<img src="support/running.gif">
 <ul>
 <li><b>Lavangam</b> is a commandline spellchecker written in Python.
 <li>Do not judge me for the kind of names I use. It is funny. Atleast, to me.
