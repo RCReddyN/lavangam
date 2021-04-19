@@ -11,7 +11,6 @@
 <li>Type in that word you want to type to check if it works as you thought it would.
 </ul>
 <br>
-<h1></h1>
 <div align="center">
 <img src="https://github.com/RCReddyN/lavangam/blob/master/img/running.gif?raw=true">
 </div>
