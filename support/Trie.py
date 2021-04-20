@@ -8,17 +8,25 @@ except:
     from nltk.corpus import words
     word_list = words.words()
 
-def calc_dist(a, b):
-    if a is None or len(a)==0:
-        return len(b)
-    if b is None or len(b)==0:
-        return len(a)
-    if a[len(a) -1] == b[len(b) -1]:
-        return calc_dist(a[:len(a) -1],b[:len(b) -1])
-    return 1 + min(calc_dist(a, b[:len(b)-1]),
-    calc_dist(a[:len(a)-1], b),
-    calc_dist(a[:len(a)-1], b[:len(b)-1]))
-
+def calc_dist(s1, s2):
+    n = len(s1)
+    m = len(s2)
+    if n == 0:
+        return m
+    if m == 0:
+        return n
+    cache = [[-1 for i in range(m + 1)] for j in range(n + 1)]
+    for i in range(n + 1):
+        cache[i][0] = i
+    for j in range(m + 1):
+        cache[0][j] = j
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            if s1[i-1] == s2[j-1]:
+                cache[i][j] = cache[i - 1][j - 1]
+            else:
+                cache[i][j] = 1 + min(cache[i][j - 1], cache[i - 1][j], cache[i - 1][j - 1])
+    return cache[n][m]
 
 class TrieNode:
     def __init__(self):
