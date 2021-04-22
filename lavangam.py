@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from support import Trie as tr
 
 class Lavangam:
