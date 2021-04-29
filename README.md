@@ -7,7 +7,7 @@
 </ul>
 <h2>Usage:</h2>
 <ul>
-<li>To use the spell-checker, run the script named lavangam.py.
+<li>To use the spell-checker, run the bash script named "lavangam".
 <li>Type in that word you want to type to check if it works as you thought it would.
 </ul>
 <br>
