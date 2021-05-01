@@ -7,9 +7,10 @@
 </p>
 
 <ul>
-<li> Lavangam is a commandline spell checker written in Python.
-<li> Do not judge me for the kind of names I use. It is funny. Atleast, to me.
-<li> It uses a Trie internally to store/search for words.
+<li> Lavangam is a command-line spell checker written in Python.
+<li> Please, do not judge me for the kind of names I use. It is funny. Atleast, to me.
+<li> Lavangam, internally, uses a Trie internally to store/search for words.
+<li> An elephantine collection of words from NLTK corpus, is used to contruct the trie, so expect a second delay.
 <li> Levenshtein's algorithm for minimum distance is used to suggest words and the distance is set to seven involuntarily.
 </ul>
 
