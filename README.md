@@ -1,4 +1,4 @@
-<h1>This is Lavangam 👋</h1>
+<h1>This is Lavangam</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RCReddyN/lavangam/blob/master/LICENSE" target="_blank">
