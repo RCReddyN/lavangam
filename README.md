@@ -5,7 +5,9 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
-
+<div align="center">
+<img src="./img/running.gif">
+</div>
 <ul>
 <li> Lavangam is a command-line spell checker written in Python.
 <li> Please, do not judge me for the kind of names I use. It is funny. Atleast, to me.
