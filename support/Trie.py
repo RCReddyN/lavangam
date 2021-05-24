@@ -1,3 +1,5 @@
+from operator import attrgetter
+
 word_list=[]    
 try:
     from nltk.corpus import words
@@ -7,6 +9,11 @@ except:
     nltk.download('words')
     from nltk.corpus import words
     word_list = words.words()
+
+class Word:
+    def __init__(self, word, dist):
+        self.word = word
+        self.dist = dist
 
 def calc_dist(s1, s2):
     n = len(s1)
@@ -65,8 +72,9 @@ class Trie:
         return False
     
     def suggestions(self, node, word):
-        if node.isWord and calc_dist(word, self.key) <= 7: 
-            self.suggestion_list.append(word)
+        dist = calc_dist(word, self.key)
+        if node.isWord and dist <= 7: 
+            self.suggestion_list.append(Word(word, dist))
         for ch in node.children:
             word += ch
             self.suggestions(node.children[ch], word)
@@ -74,10 +82,9 @@ class Trie:
 
     def suggestions_to_String(self):
         str_ = ''
-        if len(self.suggestion_list) > 20:
-            self.suggestion_list = self.suggestion_list[:7]
+        self.suggestion_list.sort(key=attrgetter('dist'))
         for s in self.suggestion_list[:7]:
-            str_ += s + '\n'
+            str_ += s.word + '\n'
         ans = str_.strip()
         self.suggestion_list = []
         return ans
