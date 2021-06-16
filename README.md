@@ -28,6 +28,15 @@
 <li><b>Levenshtein's distance</b>, simply refered to as edit-distance, is a metric used to measure difference between two strings. It assumes that the minimum distance is the number of single character edits (insertion, deletion and replacement) required to make two strings equal.
 </ul>
 
+## Working
+<ul>
+<li> Get an demo of how Lavangam works from a <a href = "https://telegram.me/thegrailbot">telegram bot</a> I wrote.
+<li> Type in a word you want to check for a potential incorrect spelling.
+</ul>
+<div align="center">
+<img src = "https://github.com/RCReddyN/lavangam/img/lavangam.png">
+</div>
+
 ## Author
 
 👤 **Ravi Chandra N Reddy**
