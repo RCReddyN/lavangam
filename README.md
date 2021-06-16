@@ -34,7 +34,7 @@
 <li> Type in a word you want to check for a potential incorrect spelling.
 </ul>
 <div align="center">
-<img src = "https://github.com/RCReddyN/lavangam/img/lavangam.png">
+<img src = "https://github.com/RCReddyN/lavangam/blob/master/img/lavangam.png">
 </div>
 
 ## Author
