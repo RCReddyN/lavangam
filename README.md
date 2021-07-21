@@ -36,9 +36,6 @@
 <img src = "https://github.com/RCReddyN/lavangam/blob/master/img/lavangam.png">
 </div>
 
-## The Story
-<p>Years ago, I came across a problem on <a href="https://leetcode.com/problems/edit-distance">Leetcode</a>, that I couldn't solve at first. I revisted the problem few days later and I solved it using recursion. I felt so happy, that in excitement, I implemented all the applications. I picked up spellchecker again when I was learning about Tries. When I implemented this as a commandline application, I realized that this recursive implementation is too slow. The very next day, I optimized the algorithm using DP(I very recently learnt that this DP implementation has a name - Wagner Fischer Algorithm). Again, months later, I implemented Damerau-Levenshtein's Distance. Today, it stands tall, but tomorrow I do not know. May be, I will stumble upon more efficient and correct algorithm. Don't forget to revisit in a few days.</p>  
-
 ## Author
 
 👤 **Ravi Chandra N Reddy**

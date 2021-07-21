@@ -33,6 +33,9 @@ def calc_dist(s1, s2):
                 cache[i][j] = cache[i - 1][j - 1]
             else:
                 cache[i][j] = 1 + min(cache[i][j - 1], cache[i - 1][j], cache[i - 1][j - 1])
+            if i >= 1 and j >= 1 and s1[i] == s2[j-1] and s1[i-1] == s2[j]:
+                cache[i][j] = min(cache[i][j], cache[i-2][j-2] + 1)
+
     return cache[n][m]
 
 class TrieNode:
