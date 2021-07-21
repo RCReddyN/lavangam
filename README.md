@@ -10,7 +10,6 @@
 </div>
 <ul>
 <li> Lavangam is a command-line spell checker written in Python.
-<li> Please, do not judge me for the kind of names I use. It is funny. Atleast, to me.
 <li> Lavangam, internally, uses a Trie internally to store/search for words.
 <li> An elephantine collection of words from NLTK corpus, is used to contruct the trie, so expect a second delay.
 <li> Levenshtein's algorithm for minimum distance is used to suggest words.
@@ -30,12 +29,15 @@
 
 ## Working
 <ul>
-<li> Get an demo of how Lavangam works from a <a href = "https://telegram.me/thegrailbot">telegram bot</a> I wrote.
+<li> Get a demo of how Lavangam works from a <a href = "https://telegram.me/thegrailbot">telegram bot</a> I wrote.
 <li> Type in a word you want to check for a potential incorrect spelling.
 </ul>
 <div align="center">
 <img src = "https://github.com/RCReddyN/lavangam/blob/master/img/lavangam.png">
 </div>
+
+## The Story
+<p>Years ago, I came across a problem on <a href="https://leetcode.com/problems/edit-distance">Leetcode</a>, that I couldn't solve at first. I revisted the problem few days later and I solved it using recursion. I felt so happy, that in excitement, I implemented all the applications. I picked up spellchecker again when I was learning about Tries. When I implemented this as a commandline application, I realized that this recursive implementation is too slow. The very next day, I optimized the algorithm using DP(I very recently learnt that this DP implementation has a name - Wagner Fischer Algorithm). Again, months later, I implemented Damerau-Levenshtein's Distance. Today, it stands tall, but tomorrow I do not know. May be, I will stumble upon more efficient and correct algorithm. Don't forget to revisit in a few days.</p>  
 
 ## Author
 
