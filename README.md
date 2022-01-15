@@ -11,7 +11,8 @@
 <ul>
 <li> Lavangam is a command-line spell checker written in Python.
 <li> Lavangam, internally, uses a Trie internally to store/search for words.
-<li> An elephantine collection of words from NLTK corpus, is used to contruct the trie, so expect a second delay.
+<li> Thanks to @matthewreagan, whose <a href=https://github.com/matthewreagan/WebstersEnglishDictionary/blob/master/dictionary_alpha_arrays.json>dictionary_alpha_arrays.json</a> I reformated as individual key-value pairs.
+<li> Stored words, and their meanings as mongoDB documents. 
 <li> Levenshtein's algorithm for minimum distance is used to suggest words.
 </ul>
 
@@ -29,12 +30,9 @@
 
 ## Working
 <ul>
-<li> Get a demo of how Lavangam works from a <a href = "https://telegram.me/thegrailbot">telegram bot</a> I wrote.
-<li> Type in a word you want to check for a potential incorrect spelling.
+<li> In case of correct spelling, the application fetches the meaning from the database.
+<li> For an incorrectly spelled word, the application fetches the words closer to it.
 </ul>
-<div align="center">
-<img src = "https://github.com/RCReddyN/lavangam/blob/master/img/lavangam.png">
-</div>
 
 ## Author
 
